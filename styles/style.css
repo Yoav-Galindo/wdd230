@@ -1,0 +1,79 @@
+/* Font family import */
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Roboto:wght@700&display=swap");
+
+/* Easy Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Basic Styles */
+body{
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    background-color: #EEEEEE;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+h1, h2{
+    font-family: Carter One;
+}
+header, footer{
+    display: flex;
+    justify-content: center;
+}
+.containerStyles{
+    width: 60%;
+    background-color: #007C77;
+    display: block;
+    border-radius: 15px;
+    box-shadow: 0 0 30px black;
+}
+/* Heather Styles */
+.myCardContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.imageItem{
+    width:11vw; 
+    margin-top: 1.5vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    border-radius: 100px;
+    box-shadow: 0 0 1vw white;
+}
+.myNameItem{
+    padding: 1vh;
+    font-size: 1.5vw;
+    color: #EEEEEE;
+    text-shadow: -2px -2px 2px #0000DF, 2px -2px 2px #0000DF, -2px 2px 2px #0000DF, 2px 2px 2px #0000DF;
+}
+/* Main styles */
+main{
+    width: 55%;
+    margin: auto;
+}
+.mainTitle{
+    font-size: 3vw;
+    text-shadow: -1.7px -1.7px 3px #496A81;
+}
+.linksList{
+    list-style: none;
+    font-size: 1.4vw;
+    line-height: 2.7vh;
+    text-indent: 1vw;
+}
+/* Footer styles */
+.footerContainer{
+    text-align: center;
+    padding: 2vh;
+    text-shadow: -2px -2px 2px #0000DF, 2px -2px 2px #0000DF, -2px 2px 2px #0000DF, 2px 2px 2px #0000DF;
+}
+#currentYear{
+    color: #EEEEEE;
+    font-size: 2.3vw;
+}
+#lastUpdate{
+    font-size: 1.6vw;
+    color: #FFD449;
+}
