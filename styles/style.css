@@ -8,6 +8,9 @@
     box-sizing: border-box;
 }
 /* Basic Styles */
+span {
+    font-size: 1vmax;
+}
 body{
     margin-top: 5vh;
     margin-bottom: 2vh;
@@ -59,9 +62,9 @@ main{
 }
 .linksList{
     list-style: none;
-    font-size: 1.4vw;
+    font-size: 1.4vmax;
     line-height: 2.7vh;
-    text-indent: 1vw;
+    text-indent: 1vmax;
 }
 /* Footer styles */
 .footerContainer{
