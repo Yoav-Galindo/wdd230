@@ -73,7 +73,9 @@ main{
     text-shadow: -2px -2px 2px #0000DF, 2px -2px 2px #0000DF, -2px 2px 2px #0000DF, 2px 2px 2px #0000DF;
 }
 #currentYear{
-    color: #EEEEEE;
+    /* The Wave Accessibility tool says this color didn't passed the AA standar for accessibility contrast. The contrast was very low. */
+    color: white;
+    /* color: #EEEEEE; */
     /* The Wave Accessibility tool gave the alert that this font size looked as a heading.*/
     /* font-size: 2.3vw; */ 
     font-size: 2vw;
