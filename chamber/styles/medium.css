@@ -1,0 +1,88 @@
+@media only screen and (min-width: 32.5rem){
+    /* Header styles */
+    .hLogo{
+        width: 100px;
+        height: 100px;   
+    }
+    .primaryTitle{
+        font-size: 1.8rem;
+    }
+    .secondaryTitle{
+        font-size: 1rem;
+    }
+    .socialMedia img{
+        width: 29px;
+    }
+    .dateContainer{
+        font-size: .7rem;
+    }
+    .navContainer{
+        font-size: .75rem;
+    }
+    /* Main Styles */
+    main{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+    }
+    .sectionStyles{
+        font-size: .7rem;
+    }
+    #heroContainer{
+        grid-column: 1/-1; 
+    }
+    #joinContainer{
+        grid-column: 1/-1; 
+    }
+    #newsReLeaseContainer{
+        grid-column: 1/-1;
+        grid-row: 2/3;
+    }
+    #spotsContainer{
+        grid-column: 1/-1; 
+        flex-direction: row;
+        height: 200px;
+        grid-row: 3/4;
+    }
+    .spot{
+        width: 45%;
+        height: 150px;
+    }
+    #joinContainer{
+        display: grid;
+        grid-column: 1/-1;
+        grid-row: 4/5;
+    }
+    #eventContainer{
+        grid-column: span 2;
+    }
+    #weatherContainer{
+        grid-column: span 1;
+    }
+    /* Footer Styles */
+    .footerInfo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .chamberAddress{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .webSiteNameFooter{
+        text-align: left;
+        margin-left: .7rem;
+    }
+    .footFlex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fLogo{
+        width: 140px;
+        height: 140px;   
+    }
+    footer{
+        font-size: .7rem;
+    }
+}

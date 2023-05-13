@@ -1,0 +1,179 @@
+/* Font family imported from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto:wght@500&display=swap');
+body{
+    font-size: 16px;
+    font-family: Roboto, Helvetica, sans-serif;
+    background-color: #FFFEF7;
+}
+/* Headings */
+h1, h2{
+    font-family:"Concert One", cursive, serif;
+}
+/* Basic styles */
+header, footer{
+    background-color: #507C47;
+    color: #FFFEF7;
+    box-shadow: 0 0 9px rgba(0, 126, 167, 1);
+}
+
+/* Header styles */
+.chamberContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .8rem;
+
+}
+.hLogo{
+    width: 80px;
+    height: 80px;   
+}
+.logoContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    
+}
+.websiteNameContainer{
+    margin-right: auto;
+    padding: .5rem;
+    
+}
+.primaryTitle{
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+.secondaryTitle{
+    font-size: .7rem;
+    margin-top: 0;
+}
+
+.socialMedia{
+    display: flex;
+    align-items: center;
+   
+}
+.socialMedia > div{
+    padding: .3rem;
+   
+}
+.socialMedia img{
+    width: 18px;
+}
+div button{
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: #FFFEF7;
+    margin-top: -.4rem;
+}
+.dateContainer{
+    display: block;
+    padding: .1rem;
+    background-color: rgba(100, 200, 80, .55);
+    font-size: .5rem;
+    margin: 0 .7rem;
+    text-align: center;
+    box-shadow: 0 0 9px rgba(0, 126, 167, 1);
+}
+.navContainer{
+    margin: 0 .7rem;
+    font-size: .65rem;
+    background-color: rgba(0,126,167, .5);
+}
+nav ul{
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    
+}
+nav ul.active{
+    display: block;
+    
+}
+
+#hamburgerBtn span:nth-child(1){
+    display: block;
+    
+}
+#hamburgerBtn span:nth-child(2){
+    display: none;
+    
+}
+
+#hamburgerBtn.active span:nth-child(1) {
+    display: none;
+    
+}
+#hamburgerBtn.active span:nth-child(2) {
+    display: block;
+    
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    padding: .6rem 1rem;
+    text-align: center;
+    color: #FFFEF7;
+}
+nav ul li a:hover{
+    background-color: rgba(0,126,167, 1);
+    color: white;
+}
+
+/* Main styles */
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1rem;
+    padding: 1rem; 
+}
+.sectionStyles{
+    background-color: white;
+    border: 2px solid rgba(0, 126, 167, 1);
+    border-radius: 5px;
+    text-indent: .5rem;
+    min-height: 150px;
+    font-size: .6rem;
+}
+#joinContainer{
+    display: none;
+}
+#spotsContainer{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spot{
+    width: 90%;
+    margin: 0 auto;
+    height: 130px;
+    border: 1px solid;
+}
+
+/* Footer styles */
+
+footer{
+    font-size: .6rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+.fLogo{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;   
+}
+
+.contactContainer a{
+    color: #FFFEF7;
+}
+.contactContainer a:hover{
+    color: #FFEE88;
+}
