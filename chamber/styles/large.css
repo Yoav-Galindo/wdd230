@@ -1,5 +1,11 @@
 @media only screen and (min-width: 64rem){
     /* Head styles */
+    .dateContainer{
+        font-size: .80rem;
+    }
+    .navContainer{
+        font-size: .90rem;
+    }
     nav ul{
         display: flex;
         justify-content: space-around;
@@ -15,7 +21,7 @@
         
    }
    .sectionStyles{
-    font-size: .8rem;
+    font-size: .85rem;
     }
 
     #heroContainer{
@@ -68,6 +74,6 @@
         margin-left: 1.5rem;
     }
     footer{
-        font-size: .8rem;
+        font-size: .85rem;
     }
 }   
