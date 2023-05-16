@@ -25,7 +25,7 @@ header, footer{
 
 }
 .hLogo{
-    width: 75px;
+    min-width: 75px;
     height: 75px;   
 }
 .logoContainer img{
