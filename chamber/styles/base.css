@@ -25,7 +25,7 @@ header, footer{
 
 }
 .hLogo{
-    width: 65px;
+    min-width: 65px;
     height: 65px;   
 }
 .logoContainer img{
@@ -62,7 +62,6 @@ header, footer{
     width: 20px;
 }
 div button{
-    width: 25px;
     font-size: 2rem;
     background-color: transparent;
     border: none;
