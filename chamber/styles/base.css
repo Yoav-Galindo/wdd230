@@ -25,7 +25,7 @@ header, footer{
 
 }
 .hLogo{
-    min-width: 65px;
+    width: 65px;
     min-height: 65px;   
 }
 .logoContainer img{
@@ -55,13 +55,14 @@ header, footer{
    
 }
 .socialMedia > div{
-    padding: .3rem;
+    padding: .2rem;
    
 }
 .socialMedia img{
     width: 20px;
 }
 div button{
+    width: 29px;
     font-size: 2rem;
     background-color: transparent;
     border: none;
