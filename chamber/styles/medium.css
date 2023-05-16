@@ -43,7 +43,7 @@
         height: 200px;
         grid-row: 3/4;
     }
-    .spot{
+    .spot1, .spot2{
         width: 45%;
         height: 150px;
     }

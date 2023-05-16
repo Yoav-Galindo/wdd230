@@ -151,7 +151,10 @@ main{
     justify-content: center;
     align-items: center;
 }
-.spot{
+.spot3{
+    display: none;
+}
+.spot1, .spot2, .spot3{
     width: 90%;
     margin: 0 auto;
     height: 130px;
