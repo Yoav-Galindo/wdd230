@@ -2,6 +2,10 @@
 // https://css-tricks.com/everything-you-need-to-know-about-date-in-javascript/
 // https://codepen.io/Yoav-Galindo-the-decoder/pen/mdzPNpG?editors=1010
 
+
+
+
+
 // This is an example of the date format I need "Monday, 22 November 2021"
 
 // With "new Date()" method I get this "Thu May 11 2023 10:26:55 GMT-0600 (Mountain Daylight Time)"
@@ -12,6 +16,16 @@ const fullYear = d.getFullYear();
 
 // With "getDate()" method I get this "11"
 const date = d.getDate();
+
+// This is the resource I used to get the first day of the week and after that add 3 days to get the Wednesday date.
+
+// https://stackoverflow.com/questions/5210376/how-to-get-first-and-last-day-of-the-current-week-in-javascript
+
+// With this code I don't need change the Wednesday date manually.
+const mondaytDate = date - d.getDay();
+const wednesdayDate = mondaytDate + 3;
+
+document.querySelector('.banner').innerHTML = ` &#128073; COME JOIN US FOR THE CHAMBER MEETING ON WEDNESDAY ${wednesdayDate} AT 7:00 P.M &#128072;`;
 
 // to get the number of the month I use this method "getMonth()" and I'll get this "4" that is May
 // to get the number of the day I use this method "getDay()" and I'll get this "4" that is Thursday
@@ -45,6 +59,7 @@ const monthsNames = [
 const monthName = monthsNames[d.getMonth()];
 const dayName = daysNames[d.getDay()];
 
+
 // Now that I have all the elements that I need to customize my date I only need to use the DOM to access to my HTML and apply it.
 
 // I use the method querySelector to access to the element with the ID #currentDate to put my customized date dynamically.
@@ -76,3 +91,9 @@ function toggleMenu() {
 }
 const hamburgerBtnSpot = document.querySelector("#hamburgerBtn");
 hamburgerBtnSpot.onclick = toggleMenu;
+
+const bannerElement = document.querySelector('.banner');
+const today = dayName;
+if (today === "Monday" || today=== "Thursday") {
+	bannerElement.style = 'display:block';
+}

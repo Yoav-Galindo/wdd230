@@ -1,5 +1,8 @@
 @media only screen and (min-width: 32.5rem){
     /* Header styles */
+    .banner{
+        font-size: 1rem;
+    }
     .hLogo{
         width: 100px;
         height: 100px;   
@@ -25,13 +28,16 @@
         grid-template-columns: repeat(3, 1fr); 
     }
     .sectionStyles{
-        font-size: .8rem;
+        font-size: 1.3rem;
     }
     #heroContainer{
         grid-column: 1/-1; 
     }
-    #joinContainer{
-        grid-column: 1/-1; 
+    .heroTitle{
+       font-size: 3rem; 
+    }
+    .mainButtons{
+        font-size: 1.5rem;
     }
     #newsReLeaseContainer{
         grid-column: 1/-1;
@@ -39,21 +45,37 @@
     }
     #spotsContainer{
         grid-column: 1/-1; 
-        flex-direction: row;
-        height: 200px;
         grid-row: 3/4;
     }
+    #spotsContainerGrid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
     .spot1, .spot2{
-        width: 45%;
-        height: 150px;
+        border: 1px solid white;
     }
     #joinContainer{
         display: grid;
         grid-column: 1/-1;
         grid-row: 4/5;
+        align-items: center;
+        position: relative;
     }
+ 
+    .joinTeamButton a{
+        color: #FFEE88;
+        bottom: 35px;
+        right: 58px;
+    }
+    .joinTeamButton a:hover{
+        font-family:"Concert One", cursive, serif;
+        transition: 2s;
+    }
+    
     #eventContainer{
         grid-column: span 2;
+      
     }
     #weatherContainer{
         grid-column: span 1;
