@@ -94,6 +94,6 @@ hamburgerBtnSpot.onclick = toggleMenu;
 
 const bannerElement = document.querySelector('.banner');
 const today = dayName;
-if (today === "Monday" || today=== "Thursday") {
+if (today === "Monday" || today=== "Saturday") {
 	bannerElement.style = 'display:block';
 }
