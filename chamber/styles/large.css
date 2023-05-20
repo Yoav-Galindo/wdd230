@@ -35,13 +35,23 @@
      .mainButtons{
         font-size: 2rem;
     } 
+    .popLinks a{
+        bottom: 2px;
+        left: 2px;
+        font-size: 1rem;
+    }
+    .popLinks a:hover{
+        font-size: 1.1rem;
+    }
     #joinContainer{
         grid-column: 1/2;
         grid-row: 3/4; 
         position: relative;
     }
     .joinTeamButton a{
-        right: 100px;
+        left: 70px;
+        bottom: 22px;
+        text-align:right;
     }
 
     #newsReLeaseContainer{

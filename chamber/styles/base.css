@@ -245,6 +245,7 @@ main{
     color: #FFEE88;
     font-size: 1.3rem;
     transition: 1s;
+    font-family:"Concert One", cursive, serif;
 }
 .weatherImg img{
     display: block;

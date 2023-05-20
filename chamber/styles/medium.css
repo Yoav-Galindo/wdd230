@@ -59,7 +59,6 @@
         display: grid;
         grid-column: 1/-1;
         grid-row: 4/5;
-        align-items: center;
         position: relative;
     }
  
@@ -69,7 +68,6 @@
         right: 58px;
     }
     .joinTeamButton a:hover{
-        font-family:"Concert One", cursive, serif;
         transition: 2s;
     }
     
