@@ -1,4 +1,4 @@
-const input = document.querySelector('#favChapter');
+const input = document.querySelector('#favCha');
 const button = document.getElementsByTagName('button');
 const list = document.querySelector('#list');
 
