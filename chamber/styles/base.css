@@ -13,6 +13,7 @@ h1, h2, h3{
     font-family:"Concert One", cursive, serif;
     color: #FFEE88;
     text-align: center;
+    font-size: 1.3rem;
 }
 /* Basic styles */
 header, footer{
@@ -165,14 +166,23 @@ main{
 
 #heroContainer{
     border: none;
-    display: flex;
+    
+    /* display: flex;
     justify-content: center; 
-    align-items: center; 
+    align-items: center; */
     position: relative;
     box-shadow: 0 1px 12px #007EA7;
     padding: 0;
 }
-#heroContainer img{
+
+/* #heroContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+} */
+
+#picTestContainer img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -180,7 +190,8 @@ main{
 }
 .heroTitle{
   position: absolute;  
-  top: 10%;
+  /* top: 10%; */
+  top: 30%;
   color: #FFEE88;
   font-size: 1.5rem;
   text-align: center;
@@ -204,6 +215,10 @@ main{
     font-size: 3.5vw;
     transition: 1s;
 }
+#weatherContainer{
+    position: relative;
+    padding: 1.5rem;
+}
 
 #joinContainer{
     display: none;
@@ -213,10 +228,13 @@ main{
 }
 #spotsContainerGrid{
     display: grid;
+    align-content: center;
+
+    
 }
-.spot1, .spot2, .spot3{
+/* .spot1, .spot2, .spot3{
     border: 1px solid white;
-}
+} */
 .spot3{
     display: none;
 }
@@ -231,6 +249,7 @@ main{
     height: 100%;
     object-fit: cover;
     box-shadow: -2px -2px 2px #FFEE88, 2px -2px 2px #FFEE88, -2px 2px 2px #FFEE88, 2px 2px 2px #FFEE88;
+    border-radius: 10px;
 }
 .popLinks a{
     color: white;
@@ -247,12 +266,126 @@ main{
     transition: 1s;
     font-family:"Concert One", cursive, serif;
 }
-.weatherImg img{
-    display: block;
-    margin: 0 auto; 
+.weatherSmallGridContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 2rem;
+}
+.wheatherTitle{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+
+}
+.wheatherImg{
+    grid-column: 1/2;
+    grid-row: 2/4;
+    justify-self: center;
+}
+.wheatherImg img{
     border-radius: 50%;
     border: 5px solid #FFEE88;
-    margin-bottom: 1rem;
+    
+}
+.tempertureLabel{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    /* text-align: center; */
+    align-self: flex-end;
+    font-size: 1rem;
+    color: white;
+}
+.tempertureValue{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    /* text-align: center; */
+    font-size: 2rem;
+    align-self: flex-start;
+
+}
+.tempertureValue :placeholder-shown{
+    text-align: center;
+}
+.windSpeedLabel{
+    grid-column: 1/2;
+    grid-row: 4/5;
+    text-align: center;
+}
+.windSpeedValue{
+    grid-column: 2/3;
+    grid-row: 4/5;
+    /* text-align: center; */
+    font-size: 1rem;
+}
+.windSpeedValue :placeholder-shown{
+    text-align: right;
+}
+.windChillLabel{
+    grid-column: 1/2;
+    grid-row: 5/6;
+    text-align: center;
+}
+#windChillResult{
+    grid-column: 2/3;
+    grid-row: 5/6;
+    text-align: center;
+    align-self: flex-end;
+    border-bottom: 4px #FFEE88 solid;
+    font-size: 1.5rem;
+    padding: .5rem;
+    color: #FFEE88;
+}
+#resultBtn{
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+}
+#clearButton{
+    position: absolute;
+    bottom: 15px;
+    right: 100px; 
+}
+.weatherBtn{
+    background-color: rgb(239, 244, 199);;
+    color: #007EA7;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: -2px -2px 2px #FFEE88, 2px -2px 2px #FFEE88, -2px 2px 2px #FFEE88, 2px 2px 2px #FFEE88;
+}
+.weatherBtn:hover{
+    background-color: #007EA7;
+    color: #FFEE88;
+    border: white 1px solid;
+}
+.spotSmallGrid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    column-gap: 1rem;
+    
+  
+}
+.spotSmallGrid picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:  10px 10px 0 0;
+    box-shadow: -2px -2px 2px #FFEE88, 2px -2px 2px #FFEE88, -2px 2px 2px #FFEE88, 2px 2px 2px #FFEE88;
+ 
+}
+.spotSmallGrid span{
+    display: block;
+    background-color: #FFFEF7;
+    color: #007EA7;
+    padding: .5rem;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 2rem;
+    box-shadow: -2px -2px 2px #FFEE88, 2px -2px 2px #FFEE88, -2px 2px 2px #FFEE88, 2px 2px 2px #FFEE88;
+}
+.spotSmallGrid span a{
+    color:#507C47;
 }
 
 /* Footer styles */

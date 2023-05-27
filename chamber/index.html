@@ -21,7 +21,7 @@
                 &#128073; Come join us for the chamber meeting on Wednesday at 7:00 p.m &#128072;
             </div>
         <div class="chamberContainer">
-            <div class="logoContainer hLogo"><img src="/wdd230/chamber/images/slcChaGreen.png" alt="SLC UT Chamber of Commerce logo"></div>
+            <div class="logoContainer hLogo"><img src="/wdd230/chamber/images/slcChaGreen.webp" alt="SLC UT Chamber of Commerce logo"></div>
             <div class="websiteNameContainer">
                 <h1 class="primaryTitle">SLC UT</h1>
                 <h2 class="secondaryTitle">CHAMBER OF COMMERCE</h2>
@@ -53,7 +53,13 @@
 <!-- Main -->
     <main>
         <section class="sectionStyles" id="heroContainer">
-            <img src="/wdd230/chamber/images/slcdowntown.jpg" alt="">
+                <picture id="picTestContainer">
+                    <source media="(max-width: 360px)" srcset="/wdd230/chamber/images/wdd230-org200label.webp">
+                    <source media="(max-width: 520px)" srcset="/wdd230/chamber/images/wdd230-org520label.webp">
+                    <source media="(max-width: 2048px)" srcset="/wdd230/chamber/images/wdd230-org1024label.webp">
+                    <img src="/wdd230/chamber/images/wdd230-org.jpg" alt="Hero img test"> 
+                </picture>
+                    <!-- <img src="/wdd230/chamber/images/slcdowntown.jpg" alt="Hero img"> -->
              <h3 class="heroTitle">Welcome to The Downtown Business Chamber</h3>
             <a href="#" class="mainButtons">JOIN US</a>
         </section>
@@ -62,9 +68,11 @@
             <h3 class="subtitles">CHAMBER GOLF PLAY</h3>
             <div class="eventGridContainer">
                 <div><p>Downtown Chamber Golf Play is the most expected event in our community. Come with your family and participate, we'll have a delicious lunch, gifts, a whole day of golf, great speakers, and more...</p></div>
-                <div>
+                <picture>
+                    <source media="(max-width: 400px)" srcset="/wdd230/chamber/images/golf289m.webp">
+                    <source media="(max-width: 1600px)" srcset="/wdd230/chamber/images/golf411l.webp">
                     <img src="/wdd230/chamber/images/golf.jpg" alt="Man playing golf img" id="golfImg">
-                </div>
+                </picture>
                 <div class="popLinks">
                     <a href="">Register Now!</a> 
                 </div>
@@ -73,10 +81,26 @@
         </section>
 
         <section class="sectionStyles" id="weatherContainer">
-            <h3 class="subtitles">WEATHER</h3>
-            <div class="weatherImg">
-                <img src="/wdd230/chamber/images/weather.png" alt="Weather img">
+            <div class="weatherSmallGridContainer">
+                <div class="wheatherTitle"><h3 class="subtitles">WEATHER</h3></div>
+                <div class= "wheatherImg"><img src="/wdd230/chamber/images/weather.png" alt="Weather img"></div>
+
+                <div class="tempertureLabel"><label for="tempertureInput">Temperture:</label></div>    
+                <div class="tempertureValue"><input type="text" id="tempertureInput" placeholder="" maxlength="4" size="4"><span>°F</span></div>
+
+
+                <div class="windSpeedLabel"><label for="windSpeedInput">Wind Speed:</label></div>
+                <div class="windSpeedValue"><input type="text" id="windSpeedInput" placeholder="" maxlength="4" size="4"><span>mph</span></div>
+
+                <div class="windChillLabel"><span>Wind Chill:</span></div>
+                <div id="windChillResult"><span></span></div>
+                
+                
+                <div class="windChillResult"><span></span></div>
+                
             </div>
+            <button id="resultBtn" class="weatherBtn" type="submit">Result</button>
+            <button id="clearButton" class="weatherBtn" type="reset">Clear</button>
         </section>
 
         <section class="sectionStyles" id="newsReLeaseContainer">
@@ -84,40 +108,72 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi tempora illo provident quasi deleniti quas modi nesciunt sunt. Magnam aliquam porro repudiandae veritatis est dolor.</p>   
          </section>
 
-        <section class="sectionStyles" id="joinContainer">
+        <div class="sectionStyles" id="joinContainer">
+            
             <p>Join to our team to attend to future events, to extend your contact network, new opportunities, relationships and more.</p>   
             <div class="popLinks joinTeamButton">
                 <a href="">JOIN TO OUR TEAM NOW!</a> 
             </div> 
-        </section>
+        </div>
 
         <section class="sectionStyles" id="spotsContainer">
-
+            <h3 class="subtitles">SPOTLIGHTS</h3>
             <div id="spotsContainerGrid">
-                <div class="spot1"><p>spotliht 1</p></div>
-                <div class="spot2"><p>spotliht 2</p></div>
-                <div class="spot3"><p>spotliht 3</p></div>
+                <div class="spot1">
+                    <div class="spotSmallGrid">
+                        <div>
+                            <picture>
+                            <img src="/wdd230/chamber/images/socialMedia520m.webp" alt="Social Media img">
+                            </picture>
+                        </div>
+                        <div>
+                            <span>Learn how to improve your sales through the power of social media. <a href="#">more info.</a></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spot2">
+                    <div class="spotSmallGrid">
+                        <div>
+                            <picture>
+                            <img src="/wdd230/chamber/images/TikTok520m.webp" alt="TikTok img">
+                            </picture>
+                        </div>
+                        <div>
+                            <span>Tiktok the new marketing platform for your products, learn to use it. <a href="#">more info.</a></span>
+                        </div>
+                    </div>    
+                </div>
+
+                
+                <div class="spot3">
+                    <div class="spotSmallGrid">
+                        <div>
+                            <picture>
+                            <img src="/wdd230/chamber/images/video520m.webp" alt="Video Img">
+                            </picture>
+                        </div>
+                        <div>
+                            <span>Learn how to engage your brand with short videos. <a href="#">more info.</a></span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-
         </section>
-
-
-
     </main>
-
+    
 <!-- Footer -->
     <footer>
         <div class="footerInfo">
             <div class="chamberAddress">
-                <div class="logoContainer fLogo"><img src="/wdd230/chamber/images/slcChaGreen.png" alt="SLC UT Chamber of Commerce logo"></div>
+                <div class="logoContainer fLogo"><img src="/wdd230/chamber/images/slcChaGreen.webp" alt="SLC UT Chamber of Commerce logo"></div>
                 <div class="webSiteNameFooter"><p>Salt Lake City UT Chamber of Commerce</p>
                 <address>301 S 800 E <br> SLC UT <br> 84104</address></div>
             </div>
 
 
             <div class="contactContainer">
-                <div class="mail"><p>Contact us: <a href="mailto:yoav-2006@hotmail.com">chambercommerce@hotmail.com</a></p></div>
+                <div class="mail"><p>&#128231; <a href="mailto:yoav-2006@hotmail.com">chambercommerce@hotmail.com</a></p></div>
                 <div class="tel"><p>&#9742; <a href="tel:8012594488">+(801)2594488</a></p></div>
                 <div class="location"><p>📍<a href="https://www.google.com/maps/place/301+S+800+E,+Salt+Lake+City,+UT+84102/@40.762842,-111.8681044,17z/data=!4m5!3m4!1s0x8752f565fd475251:0xd66fd7e0a550c3f9!8m2!3d40.762842!4d-111.8681044">Location Map</a></p></div>
             </div>
@@ -138,5 +194,6 @@
     </footer>
     
 <script src="/wdd230/chamber/scripts/script.js"></script>
+<script src="/wdd230/chamber/scripts/windchill.js"></script>
 </body>
 </html>

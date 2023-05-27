@@ -52,9 +52,9 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
-    .spot1, .spot2{
+    /* .spot1, .spot2{
         border: 1px solid white;
-    }
+    } */
     #joinContainer{
         display: grid;
         grid-column: 1/-1;
@@ -77,6 +77,9 @@
     }
     #weatherContainer{
         grid-column: span 1;
+    }
+    .tempertureValue{
+        font-size: 1.5rem;
     }
     /* Footer Styles */
     .footerInfo{
