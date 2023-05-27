@@ -341,11 +341,12 @@ main{
     position: absolute;
     bottom: 15px;
     right: 25px;
+   
 }
 #clearButton{
     position: absolute;
     bottom: 15px;
-    right: 110px; 
+    right: 125px; 
 }
 .weatherBtn{
     background-color: rgb(239, 244, 199);;
