@@ -169,5 +169,31 @@
     .discoverCards img:hover{
         box-shadow: -5px -5px 5px #FFEE88, 5px -5px 5px #FFEE88, -5px 5px 5px #FFEE88, 5px 5px 5px #FFEE88;
     }
-    
+
+    /* ------------------------form */
+    .gridFormItem{
+        grid-column: 1/2;
+    }
+    .membershipGriditem{
+        display: grid;
+        grid-column: 2/3;
+    }
+    form label.labelStyles input, form label.labelStyles select, form label.labelStyles textarea{
+        width: 50%;
+    }
+    form label.labelStyles{
+        text-align: center;
+    }
+    form input.btnStyle{
+        display: block;
+        width: 48%;
+        margin: 0 auto;
+    }
+    form fieldset{
+        border: none;
+    }
+    form fieldset{
+        font-size: 1.2rem;
+        
+    }
 }

@@ -464,3 +464,98 @@ tr:nth-child(even) {
     color: #FFFEF7;
     box-shadow: -2px -2px 2px #007EA7, 2px -2px 2px #007EA7, -2px 2px 2px #007EA7, 2px 2px 2px #007EA7;
 }
+/* --------------------------------------Form */
+.formGridContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+.gridFormItem{
+    grid-column: 1/-1;
+}
+.membershipGriditem{
+    display: none;
+}
+form fieldset{
+    margin: 1.5rem 0;
+    border: 2px solid #507C47;
+    border-radius: 7px;
+    padding: .5rem 2%;
+    
+}
+form legend{
+    color: #007EA7;
+    text-align: center;
+    padding: 0 .5rem;
+}
+form label.labelStyles{
+    display: block;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+}
+form label.labelStyles input, form label.labelStyles select, form label.labelStyles textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1.2rem;
+    border: 1px solid #007EA7;
+    border-radius: 4px;
+    padding: .75rem;
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgba(80, 124, 71, .2);
+}
+form input.btnStyle{
+    border: none;
+    background-color: #007EA7;
+    color: white;
+    padding: .75rem 2rem;
+    border-radius: 15px;
+    margin: 0 0 .70rem 2%;
+    width: 96%;
+}
+form label.labelStyles input:required{
+    border-left: 6px solid red;
+}
+form label.labelStyles input:required:valid{
+    border-left: 1px solid #007EA7;
+    border-right: 6px solid green;
+}
+.msTitle{
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+.go{
+    color: #D4AF37;
+}
+.si{
+    color: silver;
+}
+.br{
+    color: #CD7F32;
+}
+.membershipGriditem p{
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+}
+.msText{
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+.gold{
+    border: 2px solid #D4AF37;
+}
+.silver{
+    border: 2px solid silver;
+}
+.bronze{
+    border: 2px solid #CD7F32;
+}
+.membershipGriditem{
+    width: 90%;
+}
+.thanksContainer{
+    width: 50%;
+    margin: 0 auto;
+}

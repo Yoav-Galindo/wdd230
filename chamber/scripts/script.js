@@ -134,3 +134,7 @@ if ("IntersectionObserver" in window) {
     loadImages(img);
   });
 }
+
+
+const dateHours = `${dateLastMod} ${hoursLastMod}:${minLastMod}`;
+document.getElementById('hidden').value = dateHours;
