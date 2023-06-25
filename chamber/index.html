@@ -60,7 +60,6 @@
                     <source media="(max-width: 2048px)" srcset="/wdd230/chamber/images/slc1024l.webp">
                     <img src="/wdd230/chamber/images/slc.jpg" alt="Hero img"> 
                 </picture>
-                    <!-- <img src="/wdd230/chamber/images/slcdowntown.jpg" alt="Hero img"> -->
              <h3 class="heroTitle">Welcome to The Downtown Business Chamber</h3>
             <a href="#" class="mainButtons">JOIN US</a>
         </section>
@@ -83,25 +82,36 @@
 
         <section class="sectionStyles" id="weatherContainer">
             <div class="weatherSmallGridContainer">
-                <div class="wheatherTitle"><h3 class="subtitles">WEATHER</h3></div>
-                <div class= "wheatherImg"><img src="/wdd230/chamber/images/weather.png" alt="Weather img"></div>
+                <div class="wheatherTitle"><h3 class="subtitles">SALT LAKE CITY WEATHER</h3></div>
+                <!-- <div class= "wheatherImg"><img src="/wdd230/chamber/images/weather.png" alt="Weather img"></div> -->
 
-                <div class="tempertureLabel"><label for="tempertureInput">Temperture:</label></div>    
-                <div class="tempertureValue"><input type="text" id="tempertureInput" placeholder="" maxlength="4" size="4"><span>°F</span></div>
+                <!-- <div class="tempertureLabel"><label for="tempertureInput">Temperture:</label></div>   -->
+                <div class="tempertureLabel">
+                    <span></span>
+                </div>  
+                <div>
+                    <figure>
+                        <img src="weather-icon" alt="" id="weather-icon">
+                        <figcaption></figcaption>
+                    </figure>
+                </div>
+                <!-- <div class="tempertureValue"><input type="text" id="tempertureInput" placeholder="" maxlength="4" size="4"><span>°F</span></div> -->
 
 
-                <div class="windSpeedLabel"><label for="windSpeedInput">Wind Speed:</label></div>
-                <div class="windSpeedValue"><input type="text" id="windSpeedInput" placeholder="" maxlength="4" size="4"><span>mph</span></div>
+                <div class="windSpeedLabel"><label>Wind Speed:</label></div>
+                <div class="windSpeedValue" id="windSpeedInput"><span></span></div>
+                <!-- <div class="windSpeedValue"><input type="text" id="windSpeedInput" placeholder="" maxlength="4" size="4"><span>mph</span></div> -->
 
                 <div class="windChillLabel"><span>Wind Chill:</span></div>
                 <div id="windChillResult"><span></span></div>
+                <!-- <div id="windChillResult"><span></span></div> -->
                 
                 
-                <div class="windChillResult"><span></span></div>
+                <!-- <div class="windChillResult"><span></span></div> -->
                 
             </div>
-            <button id="resultBtn" class="weatherBtn" type="submit">Result</button>
-            <button id="clearButton" class="weatherBtn" type="reset">Clear</button>
+            <!-- <button id="resultBtn" class="weatherBtn" type="submit">Result</button>
+            <button id="clearButton" class="weatherBtn" type="reset">Clear</button> -->
         </section>
 
         <section class="sectionStyles" id="newsReLeaseContainer">
