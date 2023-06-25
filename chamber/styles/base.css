@@ -361,6 +361,20 @@ figure{
     color: #007EA7;
     border: white 1px solid;
 }
+.cortecy{
+    grid-column: 1/-1;
+    grid-row: 7/8; 
+    text-align: center;
+}
+.cortecy a{
+    text-decoration: none;
+    color: #FFFEF7;
+    font-size: .8rem;
+}
+.cortecy a:hover{
+    text-decoration: underline;
+    color: #FFEE88;
+}
 .spotSmallGrid{
     display: grid;
     grid-template-columns: 1fr;
