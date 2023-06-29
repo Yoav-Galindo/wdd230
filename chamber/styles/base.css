@@ -575,3 +575,55 @@ form label.labelStyles input:required:valid{
     width: 50%;
     margin: 0 auto;
 }
+/* --------------------------------------directory */
+.menuBtns{
+    text-align: center;
+}
+.list{
+    display: block;
+}
+.list section{
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #507C47;
+    width: 60%;
+    margin: 0 auto;
+    padding: .5rem 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+    
+}
+.grid section{
+    box-shadow: -2px -2px 2px #FFEE88, 2px -2px 2px #FFEE88, -2px 2px 2px #FFEE88, 2px 2px 2px #FFEE88;
+    border-radius: 10px;
+    padding: 1rem;
+    
+}
+.grid img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+.directory{
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.list img{
+    display: none;
+    
+}
+
+#gridIcon, #listIcon{
+    font-size: 3.5rem;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #507C47;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+}
