@@ -594,7 +594,7 @@ form label.labelStyles input:required:valid{
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     padding: 1rem;
-    
+
 }
 .grid section{
     box-shadow: -2px -2px 2px #FFEE88, 2px -2px 2px #FFEE88, -2px 2px 2px #FFEE88, 2px 2px 2px #FFEE88;
@@ -626,4 +626,8 @@ form label.labelStyles input:required:valid{
 li{
     list-style: none;
     text-decoration: none;
+}
+.lastVisit{
+    text-align: center;
+    padding: .5rem;
 }

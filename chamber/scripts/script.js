@@ -141,32 +141,58 @@ const dateHours = `${dateLastMod} ${hoursLastMod}:${minLastMod}`;
 
 // Local Storage
 
-localStorage.setItem('lastVisit', '2023-02-22');
+// localStorage.setItem('lastVisit', '2023-02-22');
 
-displayDaysSinceLastVisit();
+// displayDaysSinceLastVisit();
 
-function displayDaysSinceLastVisit() {
-  const visitsDisplay = document.querySelector('.daysSinceLastVisit');
+// function displayDaysSinceLastVisit() {
+//   const visitsDisplay = document.querySelector('.daysSinceLastVisit');
 
-  const lastVisit = localStorage.getItem('lastVisit');
+//   const lastVisit = localStorage.getItem('lastVisit');
 
-  if (!lastVisit) {
-    visitsDisplay.innerText = 'This is your first visit';
+//   if (!lastVisit) {
+//     visitsDisplay.innerText = 'This is your first visit';
     
-    return;
-  }
+//     return;
+//   }
 
-  const lastVisitDate = Date.parse(lastVisit);
+//   const lastVisitDate = Date.parse(lastVisit);
   
-  if (!lastVisitDate) {
-    // Stored date is not a valid format
-    return;
+//   if (!lastVisitDate) {
+//     // Stored date is not a valid format
+//     return;
+//   }
+
+//   const currentDate = new Date();
+
+//   const difference = currentDate - lastVisitDate;
+//   const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+//   visitsDisplay.innerText = `The last visit was ${differenceInDays}days ago`;
+// }
+//---------------------------------------------- Discover page ----------------------------------------------
+
+//display the amount of time in days (rounded to a whole number) between user visits to this page by the user's agent (browser).
+
+
+if (localStorage.getItem("firstVisit") === null) {
+
+  localStorage.setItem("firstVisit", Date.now());
+  
+  }
+  
+  let lastVisit = Date.now() - localStorage.getItem("firstVisit");
+  
+  let seconds = lastVisit / 1000;
+  let minutes = seconds / 60;
+  let hours = minutes / 60;
+  let days = Math.floor(hours / 24);
+  
+  if(days === 1) {
+      document.querySelector(".lastVisit").textContent = `⏰ Time since your last visit ${days} day ago`;
+  }
+  
+  else{
+      document.querySelector(".lastVisit").textContent = '🥳 Welcome this is your first visit 🤗 ';
   }
 
-  const currentDate = new Date();
-
-  const difference = currentDate - lastVisitDate;
-  const differenceInDays = Math.floor(difference / (1000 * 60 * 60 * 24));
-
-  visitsDisplay.innerText = `The last visit was ${differenceInDays}days ago`;
-}
