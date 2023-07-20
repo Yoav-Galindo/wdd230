@@ -172,7 +172,6 @@ const dateHours = `${dateLastMod} ${hoursLastMod}:${minLastMod}`;
 // }
 //---------------------------------------------- Discover page ----------------------------------------------
 
-//display the amount of time in days (rounded to a whole number) between user visits to this page by the user's agent (browser).
 
 
 if (localStorage.getItem("firstVisit") === null) {

@@ -94,23 +94,32 @@ img{
   }
   .colors th {
     color: #FFFEF7;
-    background-color: #507C47;
+    background-color: #68276E;
+
+    /* color: #FFFEF7;
+    background-color: #507C47; */
   }
   .colors td{
     width: 25%;
     height: 3em;
   }
   .primary {
-    background-color: #507C47;
+    background-color: #68276E;
+    color: white;
+    /* background-color: #507C47; */
   }
   .secondary {
-    background-color: #007EA7;
+    background-color: #FDCA40
+    /* background-color: #007EA7; */
   }
   .accent1 {
-    background-color: #FFEE88;
+    background-color: #D16100;
+    /* background-color: #FFEE88; */
   }
   .accent2{
-    background-color: #FFFEF7;
+    background-color: #015E7B;
+    color: white;
+    /* background-color: #FFFEF7; */
   }
 .example{
     background-color: white;
